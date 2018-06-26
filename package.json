@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/SmugSnake/Connecting-with-Javascript#readme",
   "dependencies": {
+    "knex": "^0.14.6",
     "pg": "^7.4.3"
   }
 }

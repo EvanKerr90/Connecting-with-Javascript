@@ -12,6 +12,7 @@ const client = new Client({
 });
 
 function output(result) {
+    console.log(myArgs[0])
     console.log("Searching...")
     console.log("Found " + result.rowCount + " person(s) by the name " + myArgs + ":")
         for (index in result.rows) {
@@ -26,6 +27,7 @@ function nameSearch(err, result) {
       return console.error("error running query", err);
     }
     output(result)
+    console.log(result.rows)
     client.end()
     });
 }
