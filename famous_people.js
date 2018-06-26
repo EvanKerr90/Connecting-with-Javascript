@@ -11,11 +11,13 @@ const client = new Client({
   ssl      : settings.ssl
 });
 
-function output(result) {console.log("Found " + result.rowCount + " person(s) by the name " + myArgs + ":")
-    for (index in result.rows) {
-    let date = result.rows[index].birthdate
-    console.log("- " + (Number(index) + 1) + ": " + result.rows[index].first_name + " " + result.rows[index].last_name + ", born '" + (date.getFullYear() + "-" + date.getDate() + "-" + (date.getMonth() + 1)) + "'")
-    }
+function output(result) {
+    console.log("Searching...")
+    console.log("Found " + result.rowCount + " person(s) by the name " + myArgs + ":")
+        for (index in result.rows) {
+        let date = result.rows[index].birthdate
+        console.log("- " + (Number(index) + 1) + ": " + result.rows[index].first_name + " " + result.rows[index].last_name + ", born '" + (date.getFullYear() + "-" + date.getDate() + "-" + (date.getMonth() + 1)) + "'")
+        }
 }
 
 function nameSearch(err, result) {
