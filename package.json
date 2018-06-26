@@ -1,0 +1,22 @@
+{
+  "name": "connecting_javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmugSnake/Connecting-with-Javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmugSnake/Connecting-with-Javascript/issues"
+  },
+  "homepage": "https://github.com/SmugSnake/Connecting-with-Javascript#readme",
+  "dependencies": {
+    "pg": "^7.4.3"
+  }
+}
